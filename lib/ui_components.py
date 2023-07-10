@@ -2,8 +2,6 @@ import streamlit as st
 from streamlit_extras.colored_header import colored_header
 from PIL import Image
 
-from lib.statics import CHAT_EXAMPLE
-
 
 def render_logo_header(header_title):
     col1, col2 = st.columns([0.05, 0.95])
@@ -12,14 +10,14 @@ def render_logo_header(header_title):
         colored_header(label=header_title, description=" ", color_name="blue-100")
 
 
-def render_chat_example():
+def render_chat_example(example):
     st.markdown("##### Example of the chat:")
-    st.markdown("<br>".join(CHAT_EXAMPLE.split("\n")), unsafe_allow_html=True)
+    st.markdown("<br>".join(example.split("\n")), unsafe_allow_html=True)
 
 
 def render_analysis(df, analyzer):
     st.markdown(f"<p style='text-align: center;'>Table of Extracted Entities</p>", unsafe_allow_html=True)
-    st.write(df)
+    st.columns([0.2, 0.6, 0.2])[1].write(df)
     st.markdown(f"<p style='text-align: center;'>Visualizations of Entity Analysis</p>", unsafe_allow_html=True)
 
     analyzer.process_data()

@@ -5,6 +5,7 @@ from lib.ui_components import render_logo_header, render_chat_example, render_an
 from lib.model import GPTReviewer, Analyzer
 
 from configs import ENTITIES_TO_EXTRACT, AZURE_OPENAI_GPT_DEPLOYMENT
+from lib.statics import CHAT_EXAMPLE
 
 
 def main():
@@ -16,10 +17,10 @@ def main():
         "##### Within this demo you can pass chat between user and bot regarding their flight to GPT to extract entities."
     )
     st.markdown("<br>", unsafe_allow_html=True)
-    render_chat_example()
+    render_chat_example(CHAT_EXAMPLE)
 
     st.markdown("<br>", unsafe_allow_html=True)
-    text_input = st.text_input("Enter text here")  # st.text_area("Enter text here", height=300)
+    text_input = st.text_area("Enter text here", height=200)
     submit_button = st.button("Submit")
 
     # Show the results in the table.

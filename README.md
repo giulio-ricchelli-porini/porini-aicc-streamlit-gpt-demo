@@ -16,9 +16,9 @@ This project demonstrates the [Open AI](https://platform.openai.com/docs/guides/
     * Switch to the new branch: ```git checkout develop```
     * Check that the current branch is "develop": ```git branch```
 * Update the code:
-    * Replace the text_input in the main page with another Streamlit component so that the user can visualize at least 3 lines of text before submitting the text to analyze (check the Streamlit documentation)
-    * Add a button to the main page that inserts the example chat text in the input text box, so that the user can use this button to load the example through a simple click
-    * TODO
+    * Add a button to the main page, with label "Use example chat", that inserts the example chat text in the input text box, so that the user can use this button to load the example through a simple click
+        * To accomplish this, you can use the Streamlit session_state, combined with the on_click event on the new button and the value attribute on the text_input (check the Streamlit documentation)
+        * Remember to initialize the state on page load!
 * Push your changes and merge to the "main" branch:
     * By using the integrated "Source Control" tab in VSCode, commit and push your changes by publishing the "develop" branch to the remote
     * From the browser, open the repository, go to the "develop" branch and create a pull request to merge you changes to the "main" branch: complete and merge it to align "main" to "develop"
