@@ -1,0 +1,12 @@
+streamlit==1.18.1
+streamlit-extras==0.2.6
+pathlib2==2.3.5
+openai==0.26.4
+pandas==1.2.4
+pyodbc==4.0.35
+numpy==1.19.5
+seaborn==0.11.1
+matplotlib==3.4.0
+wordcloud==1.8.2.2
+altair==4.2.2
+Pillow==9.5.0
