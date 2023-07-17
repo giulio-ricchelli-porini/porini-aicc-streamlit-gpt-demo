@@ -21,7 +21,7 @@ This project demonstrates the [Open AI](https://platform.openai.com/docs/guides/
         * Remember to initialize the state on page load!
 * Push your changes and merge to the "main" branch:
     * By using the integrated "Source Control" tab in VSCode, commit and push your changes by publishing the "develop" branch to the remote
-    * From the browser, open the repository, go to the "develop" branch and create a pull request to merge you changes to the "main" branch: complete and merge it to align "main" to "develop"
+    * From the browser, open the repository, go to the "develop" branch and create a pull request to merge your changes to the "main" branch: complete and merge it to align "main" to "develop"
 * Update your project branches:
     * From your local project, from the terminal window go to the "main" branch: ```git checkout main```
     * Pull the changes applied by the pull request you completed: ```git pull```; in this way, your local project is aligned with the "main" from the remote
